@@ -1,4 +1,101 @@
-body {
-    background-color: black;
+body, html {
     color: whitesmoke;
+    font-family: americane-condensed, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    height: 100%;
+    background-color: black;
+    background-image: url(images/GDBGplain.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.b {
+    padding: 1.5rem;
+}
+
+.jumbotron {
+    background-color: rgba(0, 0, 0, 0.50);
+    background-image: linear-gradient(to right, rgba(243, 143, 187, 0.1), rgba(228, 164, 85, 0.1), rgba(255, 246, 139, 0.1), rgba(130, 182, 106, 0.1), rgba(121, 116, 169, 0.1));
+}
+
+.title {
+    color: white;
+    background: -webkit-linear-gradient(left, rgba(243, 143, 187), rgba(228, 164, 85), rgba(255, 246, 139), rgba(130, 182, 106), rgba(121, 116, 169));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.75rem;
+}
+
+.h1 {
+    color: white;
+    position: absolute center;
+    margin: 30% 0;
+}
+
+.heading {
+    padding-bottom: 20px;
+    font-size: 1.75rem;
+}
+
+footer {
+    
+}
+
+.gallery, .gallery1 {
+    height: 400px;
+    padding-bottom: 30px;
+    align-content: justify;
+    float: none;
+    margin: 0 auto;
+}
+
+.grid, .grid1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.btn {
+    color: white;
+    background: -webkit-linear-gradient(left, rgba(243, 143, 187), rgba(228, 164, 85), rgba(255, 246, 139), rgba(130, 182, 106), rgba(121, 116, 169));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    position: fixed;
+    border: .01em solid rgba(255, 255, 255, 0.171);
+}
+
+.btn:hover {
+    opacity: .5;
+}
+
+@media (max-width: 544px) {  
+    h1, .heading, .title {font-size: 1.75rem;}
+    .gallery, .gallery1 {height: 200px;}
+    .grid {grid-template-columns: auto auto}
+    .grid1 {grid-template-columns: auto;}
+  }
+
+@media (min-width: 544px) {  
+    h1, .heading, .title {font-size:2.75rem;}
+    .gallery, .gallery1 {height: 300px;}
+    .grid {grid-template-columns: auto auto}
+    .grid1 {grid-template-columns: auto;}
+  }
+
+@media (min-width: 768px) {
+    h1, .title {font-size: 3.75rem;}
+    .heading {font-size: 2.75rem}
+    .gallery, .gallery1 {height: 375px;}
+    .grid {grid-template-columns: auto auto auto;}
+
+}
+
+@media (min-width: 992px) {
+    h1, .title {font-size: 4.75rem;}
+    .heading {font-size: 2.75rem}
+    .gallery, .gallery1 {height: 500px;}
+    .grid {grid-template-columns: auto auto auto;}
 }
